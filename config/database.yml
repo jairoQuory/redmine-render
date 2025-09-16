@@ -11,6 +11,10 @@ production:
   host: <%= ENV['DB_HOST'] %>
   port: <%= ENV['DB_PORT'] %>
   pool: 5
+  prepared_statements: false
+  variables:
+    statement_timeout: 5000
+
 
 
 development:
